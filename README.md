@@ -1,16 +1,28 @@
-# React + Vite
+# Evento - Event Booking Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A frontend UI for an event booking platform. Built for the Advanced Web lab.
 
-Currently, two official plugins are available:
+## Pages
+- Home
+- Events (search, filter, sort)
+- Event Detail
+- Seat Selection
+- Checkout (form validation)
+- Booking Confirmation (e-ticket with QR code)
+- Login / Sign Up
+- My Bookings
+- Profile
+- 404
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- React + Vite
+- React Router
+- Tailwind CSS
+- qrcode.react
 
-## React Compiler
+## Run Locally
+    npm install
+    npm run dev
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Note
+This is a UI project. Data is fake. Login and payment are demo only.

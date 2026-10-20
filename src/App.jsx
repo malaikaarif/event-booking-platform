@@ -10,10 +10,13 @@ import Login from './pages/Login'
 import MyBookings from './pages/MyBookings'
 import Profile from './pages/Profile'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
+import NotFound from './pages/NotFound'
 
 export default function App() {
     return (
     <BrowserRouter>
+    <ScrollToTop />
       <div className="flex min-h-screen flex-col bg-gray-50">
         <Navbar />
         <main className="flex-1">
@@ -27,6 +30,7 @@ export default function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/my-bookings" element={<MyBookings />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
